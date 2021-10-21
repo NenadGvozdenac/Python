@@ -1,7 +1,13 @@
 import pandas as pd
 
 def main():
-    print("Dobar dan")
+    dokument = pd.read_excel("nesto.xlsx")
+
+    # for i in dokument.columns:
+    #     print(i)
+
+    for i, j in dokument.iterrows():
+        print(str(j))
 
 
 

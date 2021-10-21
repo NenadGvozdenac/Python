@@ -1,10 +1,9 @@
-import docx 
+import docx2txt as do
 
 def main():
-    dokument = docx.Document("text.docx")
+    dokument = do.process("text.docx")
 
-    for i in dokument.paragraphs: 
-        print(i)
+    print(dokument)
 
 
 if __name__ == '__main__':
